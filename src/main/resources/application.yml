@@ -1,0 +1,14 @@
+spring:
+
+  # 数据库连接
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/student_manage?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password:
+    driver-class-name: com.mysql.jdbc.Driver
+
+#    配置mybatis
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.xiaozhao.domain
